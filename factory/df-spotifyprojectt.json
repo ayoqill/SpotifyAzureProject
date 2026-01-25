@@ -1,0 +1,9 @@
+{
+	"name": "df-spotifyprojectt",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f68a1e96-9322-455f-9418-cb9744b04abc",
+		"tenantId": "18ce76f6-99f4-457f-9f62-acd65d9b9777"
+	}
+}
