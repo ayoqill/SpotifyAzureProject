@@ -1,1 +1,5 @@
-Building a spotify pipeline using Azure
+I built an end-to-end Spotify data engineering pipeline using PySpark on Azure Databricks. The project follows a Bronze–Silver–Gold (Medallion) architecture, starting with an initial batch load and then handling incremental data ingestion using Auto Loader. Raw data is cleaned, deduplicated, and merged in the Silver layer using Delta Lake, and then modeled into a star schema (fact and dimension tables) in the Gold layer for analytics. The pipeline supports backfilling, schema changes, and CDC-style updates without full reloads, helping reduce unnecessary processing and improve resource efficiency.
+
+<img width="1901" height="936" alt="ingestion_pipeline" src="https://github.com/user-attachments/assets/20c90e0d-12f1-4c06-a919-d97d8b9c86cd" />
+<img width="1905" height="937" alt="incremental_lopp" src="https://github.com/user-attachments/assets/9e97e51b-52f4-4412-8607-796b8a7552e7" />
+<img width="1528" height="964" alt="gold pipeline" src="https://github.com/user-attachments/assets/7a3f5dbd-a0b9-407e-a876-1f2b301c7dc5" />
